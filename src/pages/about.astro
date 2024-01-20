@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
+import cabinets from "../assets/images/cabinets2.jpg";
 ---
 
 <BaseLayout
   title="About"
   description="Meta description for the page"
-  preloadImg={import("../assets/images/cabinets2.jpg")}
+  preloadImgs={[cabinets.src]}
 >
   <!-- ============================================ -->
   <!--                    LANDING                   -->
@@ -26,11 +27,11 @@ import CTA from "@components/CTA.astro";
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/cabinets2.jpg"
         alt="kitchen cabinets"
         loading="eager"
-        width="2500"
-        height="1667"
+        src={cabinets.src}
+        width={cabinets.width}
+        height={cabinets.height}
       />
     </picture>
   </section>

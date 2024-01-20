@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
+import landing from "../assets/images/landing.webp";
 ---
 
 <BaseLayout
   title="Reviews"
   description="Meta description for the page"
-  preloadImg={import("../assets/images/cabinets2.jpg")}
+  preloadImgs={[landing.src]}
 >
   <!-- ============================================ -->
   <!--                    LANDING                   -->
@@ -23,10 +24,10 @@ import CTA from "@components/CTA.astro";
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/landing.jpg"
         alt="new home"
-        width="2500"
-        height="1667"
+        src={landing.src}
+        width={landing.width}
+        height={landing.height}
         loading="eager"
       />
     </picture>

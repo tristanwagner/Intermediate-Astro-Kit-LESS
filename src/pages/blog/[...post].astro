@@ -3,7 +3,13 @@ import { getCollection } from "astro:content";
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import { formatDate } from "@js/util.js";
 import FeaturedPost from "@components/FeaturedPost.astro";
+import { getImage } from "astro:assets";
+import cabinets2 from "../../assets/images/cabinets2.jpg";
 import "@styles/blog.less";
+
+let optimizedCabinets2 = await getImage({
+  src: cabinets2
+});
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -18,7 +24,7 @@ const { title, date, description, image, imageAlt, author } = post.data;
 const { Content } = await post.render();
 ---
 
-<BaseLayout {title} {description}>
+<BaseLayout {title} {description} preloadImgs={[optimizedCabinets2.src]}>
   <!-- ============================================ -->
   <!--                    LANDING                   -->
   <!-- ============================================ -->
@@ -36,11 +42,11 @@ const { Content } = await post.render();
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/cabinets2.jpg"
         alt="kitchen cabinets"
         loading="eager"
-        width="2500"
-        height="1667"
+        src={optimizedCabinets2.src}
+        width={optimizedCabinets2.attributes.width}
+        height={optimizedCabinets2.attributes.height}
       />
     </picture>
   </section>
