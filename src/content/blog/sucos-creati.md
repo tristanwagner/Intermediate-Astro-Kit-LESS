@@ -1,10 +1,11 @@
 ---
 title: Sucos Creati
 description: Lorem markdownum Talia. Carinae equis.
-author: Code Stitch
+author: src/content/authors/tw.md
 date: 2023-06-08T15:27:34.591Z
 tags:
-    - post
+  - test
+  - post
 image: /assets/images/blog/landing.jpg
 imageAlt: Kitchen
 ---
@@ -13,15 +14,15 @@ imageAlt: Kitchen
 
 Lorem markdownum Talia. [Carinae equis](http://lapsasaturnia.com/inducitest).
 
-Illa _fatentur parenti_ formicas dryadas formae cum sexque Thebae exspectat! Turaque lacrimabile patriam aristis. Aggere cum tecta, culpatque potest; utque et
+Illa *fatentur parenti* formicas dryadas formae cum sexque Thebae exspectat! Turaque lacrimabile patriam aristis. Aggere cum tecta, culpatque potest; utque et
 os maiores carmine velle altis de signorum. Prosilit alta credo conlapsa erat, coniugis umerique errabat pulsus detestatur! Te dubitat cursu?
 
-Recentes actus currebam exercet exeat tractoque, aethera accusasse **residunt vellentem** Hesperio. Tacitaque lumina _totumque neptis_, mihi genitoris totoque
+Recentes actus currebam exercet exeat tractoque, aethera accusasse **residunt vellentem** Hesperio. Tacitaque lumina *totumque neptis*, mihi genitoris totoque
 nec vigili.
 
 ## Huc est erat
 
-Visa tantis eris nec mox Tydides auras, sarisa arbor, omen paternos curvataque pectore tela decimo Nilus. Postquam _capiat_ Cyllenius unde redditur
+Visa tantis eris nec mox Tydides auras, sarisa arbor, omen paternos curvataque pectore tela decimo Nilus. Postquam *capiat* Cyllenius unde redditur
 [inmensum](http://noletiacet.net/aquas-moles) pedibus. Sine quaerant fronde solvo Phoebus iuncique haeret, addit qui obsisto quam dum.
 
 ## Et erat
@@ -40,14 +41,14 @@ et queat subvolat; in tuas vitat; ut.
 
 Lapsus flammae. Relatus ille irascitur silet querella tacito: misisset! Tamen arduus et, capitis quae, trepidus insequitur illa pactaeque.
 
--   Se metu
--   Videntur in Stygia tellure
--   Concordare spatiosum
--   Iove progenuit
+* Se metu
+* Videntur in Stygia tellure
+* Concordare spatiosum
+* Iove progenuit
 
 Praeter vos: nubibus ceu **medio** qui corpore hoc in quid hanc, inpia meae prior Hecabesque illa. Cum hinc rasa tardius litora despectabat inplerant longis;
-est [vestibus e](http://www.offensa-vana.com/sororibus). Vires auras pedem silvas sumpsit utinam famulis volucris; _crimina cupidine_?
+est [vestibus e](http://www.offensa-vana.com/sororibus). Vires auras pedem silvas sumpsit utinam famulis volucris; *crimina cupidine*?
 
 Hostem et pudibundaque quam intima dixit repulsae simul multorumque inde, nymphas ramos paternis. Coepit [Hodites](http://manus.io/cum-scythicis.aspx) ab suae
-remisso prius cingentibus iussos vincla concordare! Precaris membra substitit communis Rhodopeius fieri _versus in natorum_, est es. Vident paribus an ipse
+remisso prius cingentibus iussos vincla concordare! Precaris membra substitit communis Rhodopeius fieri *versus in natorum*, est es. Vident paribus an ipse
 illis, [amplexo](http://nisi.com/) ramaliaque Iovis, potes **simque** omnia.
