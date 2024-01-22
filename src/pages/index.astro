@@ -2,12 +2,13 @@
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
 import landing from "../assets/images/landing.webp";
+import landingm from "../assets/images/landing-m.webp";
 ---
 
 <BaseLayout
   title="Pixel Perfect Websites"
   description="Meta description for the page"
-  preloadImgs={[landing.src]}
+  preloadImgs={[landing.src, landingm.src]}
 >
   <!-- ============================================ -->
   <!--                    Hero                      -->
@@ -42,7 +43,7 @@ import landing from "../assets/images/landing.webp";
     <picture class="cs-picture">
       <source
         media="(max-width: 600px)"
-        srcset="/assets/images/landing-m.webp"
+        srcset={landingm.src}
       />
       <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg" />
       <img

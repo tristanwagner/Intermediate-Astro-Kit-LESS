@@ -17,7 +17,7 @@ const { description, title, preloadImgs = [] } = Astro.props;
             <meta name="description" content={description}>
             <meta name="keywords" content="">
             <link rel="canonical" href={`https://${client.domain}${Astro.url.pathname}`}>
-    
+
             <!--Social Media Display-->
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
@@ -25,7 +25,7 @@ const { description, title, preloadImgs = [] } = Astro.props;
             <meta property="og:url" content={`https://${client.domain}${Astro.url.pathname}`} />
             <meta property="og:image" content="/assets/images/logo-small.png" />
             <meta property="og:image:secure_url" content="/assets/images/logo-small.png" />
-    
+
             <!--Favicons-->
             <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
@@ -33,12 +33,12 @@ const { description, title, preloadImgs = [] } = Astro.props;
             <link rel="manifest" href="/assets/favicons/site.webmanifest">
             <meta name="msapplication-TileColor" content="#da532c">
             <meta name="theme-color" content="#ffffff">
-    
+
             <!-- Preloads -->
             <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
             <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
             <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
-    
+
             <!-- Preload an image - tag not rendered if preloadImgs is empty to stop console errors -->
             {
               preloadImgs?.length && preloadImgs.map((image) =>
@@ -48,28 +48,9 @@ const { description, title, preloadImgs = [] } = Astro.props;
             <!-- Sitewide Scripts -->
             <script defer src="/assets/js/nav.js"></script>
             <script defer src="/assets/js/dark.js"></script>
-   
-            {Astro.url.pathname === "/" &&
-            <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-    if (window.netlifyIdentity) {
-        window
-            .netlifyIdentity
-            .on('init', (user) => {
-                if (!user) {
-                    window
-                        .netlifyIdentity
-                        .on('login', () => {
-                            document.location.href = '/admin/';
-                        });
-                }
-            });
-    }
-    </script> }
-    
             <!--For home page, use service keywords for the title, including location for SEO.
             Other pages should just include the page name.
-            
+
             EXAMPLE:
             Home page - House Painting Contractors | Painters and Co. | TestCity, WA
             About Page - About us | Painters and Co.
@@ -90,12 +71,10 @@ const { description, title, preloadImgs = [] } = Astro.props;
         <body>
             <!--Screen reader skip main nav-->
             <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
-    
             <Header />
             <main id="main">
                 <slot/>
             </main>
             <Footer />
-    
         </body>
 </html>
