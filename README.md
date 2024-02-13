@@ -274,15 +274,28 @@ This code will be inserted into the `<slot />` component in BaseLayout.astro.
 
 ### Configuring the CMS
 
-Within `astro.config.mjs`, you'll find a `NetlifyCMS` object which contains the configuration for the blog. While this project is set up to work with a blog out of the box, you are welcome to make changes using
-<a href="https://decapcms.org/docs/add-to-your-site/#configuration">Decap CMS'</a> documentation.
+This project got rid of `NetlifyCMS` to use instead `tinacms`, you'll need to
+configure a project on their [website](https://app.tina.io/) and then
+provide `TINA_CLIENT_ID` and `TINA_TOKEN` that it gives you to environment variables,
+for local you can use the `.env` file and production you can set the
+environment variables on `netlify`.
 
-Blog content lives in `/src/content/blog` in the form of markdown files, with a front matter similar to that of the pages. MDX files can also be used if you want to include JSX components. The title, description, and tags are defined in the frontmatter of the markdown. The permalink will be the same as the file name.
+`tinacms` is already configured to be hable to handle the blog content in the CMS
+but if you need to edit anything you'll need to look into the `tina/` directory
 
-When `npm start` is run, a proxy server for the CMS is spun up on `localhost:8081`. That can often mean you run into errors if `localhost:8080` is already
-taken, so look out for that. You can locally access the blog via navigating to the /admin path. All blog content can be easily created, updated and deleted via
-this admin panel, and is the very system that your clients can use to manage their website without your involvement. Everything on the blog should be fairly
-intuitive, but feel free to experiment with using this panel first. With this kit, you can add _featured_ to the comma-separated list of tags to have them show
+Blog content lives in `/src/content/blog` in the form of markdown files,
+with a front matter similar to that of the pages. MDX files can also be used
+if you want to include JSX components. The title, description, and tags are defined
+in the frontmatter of the markdown. The permalink will be the same as the file name.
+
+When `npm start` is run, a proxy server for the CMS is spun up on `localhost:8081`.
+That can often mean you run into errors if `localhost:8080` is already
+taken, so look out for that. You can locally access the blog via navigating
+to the `/admin` path. All blog content can be easily created, updated and deleted via
+this admin panel, and is the very system that your clients can use to manage
+their website without your involvement. Everything on the blog should be fairly
+intuitive, but feel free to experiment with using this panel first.
+With this kit, you can add _featured_ to the comma-separated list of tags to have them show
 up as so in the frontend.
 
 <a name="deployment"></a>
